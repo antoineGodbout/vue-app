@@ -10,3 +10,22 @@ new Vue({
         axios.get('/skills').then(response => this.skills = response.data);
     }
 });
+
+let source = {
+    user: {
+        name: 'John Doe'
+    }
+}
+
+
+new Vue({
+    el: '#one',
+
+    data: source,
+})
+
+new Vue({
+    el: '#two',
+
+    data: source,
+})

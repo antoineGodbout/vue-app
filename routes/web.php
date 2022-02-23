@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('skills', function (){
     return ['Laravel', 'Vue', 'PHP', 'JavaScript', 'Tooling'];
 });
+
+Route::get('/shared-state', function (){
+    return view('shared-state');
+});
